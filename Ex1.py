@@ -12,7 +12,6 @@
 '''
 
 # Python Calculator
-'''
 ch=0
 
 while True:
@@ -26,10 +25,12 @@ while True:
     print("8. Exit")
 
     ch = input("Enter your choice :- ")
+    ch = int(ch)
 
-    a = input("Enter Num 1 :- ")
-    b = input("Enter Num 2 :- ")
-    print(ch)
+    if(ch==8):break
+
+    a = int(input("Enter Num 1 :- "))
+    b = int(input("Enter Num 2 :- "))
 
     if ch==1:
         print(a+b)
@@ -45,12 +46,10 @@ while True:
         print(a%b)
     elif ch==7:
         print(a**b)
-    else:
-        break
 
 print("Successfully Done Operations!!!")
-'''
 
+'''
 a = int(input("Enter num1 :- "))
 b = int(input("Enter num2 :- "))
 
@@ -62,3 +61,4 @@ print("Division of ", a ," and ", b ," is : {0:.3f}". format(a/b))
 print("Floor Division of ", a ," and ", b ," is : ", a//b)
 print("Exponential of ", a ," and ", b ," is : ", a**b)
 print("Modulus of ", a ," and ", b ," is : ", a%b)
+'''
