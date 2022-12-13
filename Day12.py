@@ -1,29 +1,20 @@
-# Strings in Python
+#  String Slicing in Python
 
-name = "Yash"
-middle = "Jayram\nAmbekar"
-city = 'Pune'
+name = "Yash Jayram Ambekar"
+print(name[0:5])
+print(name[:9]) # displays string upto the 8th index, character at 9th index is not displayed
+print(name[5:]) 
 
-print(name,middle ," ", city)
+# Negative slicing
 
+print(name[:len(name)-3])
+print(name[:-3])
+print(name[-4:])    # negative indexes specify the indexes from the back of the string
 
-c = '''
-    this is 
-    a multiline string
-'''
+# Length of a string
+print("Length of the string is :- ",len(name))
 
-print(c)
+# Quick Quiz
 
-#  we can access characters of string by indexing and index slicing
-# strings are LIKE array of characters
-
-name = "Yash"
-
-print(name[2])
-print(name[0:3])
-
-for i in name:
-    print(i, end=" ")
-print()
-for i in range (0, len(name)):
-    print(name[i],end=" ")
+nm = "Harry"
+print(nm[-4:-2])    #this will print "ar"
