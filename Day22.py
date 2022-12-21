@@ -35,3 +35,10 @@ else:
 
 # Jump indexing
 print(l3[::2])
+
+# List Comprehension
+# list comprehension is the process of creating a list  from other iterables list lists, tuples, dictionaries and even arrays and strings
+
+l4 = [ele for ele in range(50) if(ele%2==0)]
+
+print(l4)
