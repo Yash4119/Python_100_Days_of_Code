@@ -27,7 +27,7 @@ print("Gun = 2")
 
 while(True):
     choice = int(input("Enter your Choice :- "))
-    comp_choice = int(2 * random.random() - 1)
+    comp_choice = random.randint(0,2)
 
     print("Your Choice :- ",choice)
     print("Computer's Choice :- ",comp_choice)
